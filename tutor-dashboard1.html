@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+	<title>Dashboard | Education Center</title>
+
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/core.animation.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/tribe-style.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/skins/skin.css" type="text/css" media="all" />
+
+
+	<link rel="stylesheet" href="js/core.messages/core.messages.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="js/swiper/idangerous.swiper.min.css" type="text/css" media="all" />
+	
+	<link rel="stylesheet" href="css/responsive.css" type="text/css" media="all" />
+	<link rel="stylesheet" href="css/skins/skin-responsive.css" type="text/css" media="all" />
+	<link href="css/material/app.css" rel="stylesheet">
+	<style type="text/css">
+
+
+	</style>
+	
+</head>
+
+<body class="page ">
+	     
+            <header>
+              <div id="menu">
+                <div >
+                  <a class="btn btn-fab btn-raised btn-primary menu-icon" href="#side-nav"><i class="material-icons">menu</i></a>
+                </div>
+                <div class="row well" id="side-nav">
+                  <div class="text-right">
+                    <a class="btn-link close-nav" href="#">
+                      <i class="material-icons">clear</i>
+                    </a>
+                  </div>
+                  <ul class="list-group menu-list" >
+                    <li class="user-block">
+                      <a href="" ><img class="img-fluid center-block img-circle" src="http://lorempixel.com/64/64/people/1" alt="Erudo User"/></a>
+                      <h4 class="text-center">User</h4>
+                    </li>
+                    <a href="mycourses.html" class="list-group-item withripple btn-block active">My Courses</a>
+                    <a href="profile.html" class="list-group-item withripple btn-block">Profile</a>
+                    <a href="accounts.html" class="list-group-item withripple btn-block">Accounts</a>
+                    <a href="index.html" class="list-group-item withripple btn-block">Logout</a>
+                  </ul>       
+                </div>
+              </div>
+            </header>
+
+
+
+
+	<div class="modal fade" id="newclass" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		<div class="modal-dialog modal-md" role="document">
+			<div class="modal-content">
+			<div class="modal-header">
+				<h3 class="modal-title text-primary text-center text-capitalize">Create a new class</h3>
+			</div>
+				<div class="">
+					<div class="modal-body">
+						<form class="form-horizontal p-lg">
+							<div class="form-group ">
+								<label class="control-label" for="name">Topic</label>
+								<input type="text" id="name" class="form-control open">
+							</div>
+							<div class="form-group  ">
+								<label class="control-label" for="subject">Subject</label>
+								<input type="text" id="subject" class="form-control open">
+							</div>
+							<div class="form-group ">
+								<label class="control-label" for="class">Class</label>
+								<input type="text" id="class" class="form-control open">
+							</div>
+							<div class="form-group ">
+								<label class="control-label" for="class">Duration</label>
+								<input type="text" id="duration" class="form-control open">
+							</div>
+							<div class="form-group">
+								<label class="control-label" for="class">Starting date</label>
+								<input type="text" id="date" class="form-control open datetime" data-datetimepicker>
+							</div>
+							<div class="form-group ">
+								<label class="control-label" for="class">Class</label>
+								<select class="form-control open" id="class">
+									<option>8</option>
+									<option>9</option>
+									<option>10</option>
+									<option>11</option>
+									<option>12</option>
+									<option>B.Tech.</option>
+								</select>
+							</div>
+							<div class="form-group text-right">
+								<button type="submit" class="btn btn-primary withripple" data-dismiss="modal">Create</button>
+								<button type="button" class="btn btn-danger withripple" data-dismiss="modal">Dismiss</button>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div><!-- end modal body -->
+		</div><!-- end modal content -->
+	</div><!-- End Modal -->
+	<!-- Body -->
+	<div class="body_wrap">
+
+		<div class="page_wrap">
+			
+			<div class="">
+
+				<div class="well pv0">
+					<div class="page-header">
+						<h2>Dashboard</h2> 
+						<small>Your sessions and courses</small>
+					</div>
+				</div>
+
+				<div class="container">
+					<!-- Main Section -->
+					<section class="row mb-lg">
+						
+						<div class="col-sm-3 sticky-widget">
+							<div class="well text-center">
+								<img src="http://lorempixel.com/64/64/people" class="img-fluid img-circle center-block" alt="profile_pic">
+								<h4 class="text-capitalize text-center">john doe</h4>
+								<div class="text-center">Lecturer,UC Berkley</div>
+								<dl class="pv mb0">
+									<dt>Subjects Taught</dt>
+									<dd>Math,English</dd>
+									<dt></dt>
+									<dd class="text-danger">4.5  <i class="fa fa-star rate"></i></dd>
+								</dl>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class="card">
+								<div class="card-heading">
+									<button class="btn btn-fab btn-fab-mini btn-raised pull-right" title="Start new class" data-toggle="modal" data-target="#newclass"><i class="material-icons">add</i></button>
+									<h2 class="card-title">Classrooms</h2>
+								</div>
+							<article class="col-sm-12 enrolled-course">
+								<h4><a href="#" class="text-info text-capitalize">Sequence and series</a> 
+								<label class="mb0">(Math)</label>
+								<span class="pull-right rate">4.6 <i class="fa fa-star"></i></span>
+								</h4>
+							
+								<dl class="col-sm-6 dashboard-list">
+									<dt>Class Type</dt>
+									<dd>One to One </dd>
+									<dt>Hours Remaimning</dt>
+									<dd>12Hrs</dd>
+								</dl>
+
+								<dl class="col-sm-6 dashboard-list">
+									<dt>Student(s) Enrolled</dt>
+									<dd><a href="">Shantanu metha</a></dd>
+									<dt>Next Session</dt>
+									<dd>10/04/2016 18:30</dd>
+								</dl>
+							</article>					
+
+							<article class="col-sm-12 enrolled-course">
+								<h4><a href="#" class="text-info text-capitalize">Sequence and series</a> 
+								<label class="mb0">(Math)</label>
+								<span class="pull-right rate">4.6 <i class="fa fa-star"></i> </span>
+								</h4>
+							
+								<dl class="col-sm-6 dashboard-list">
+									<dt>Class Type</dt>
+									<dd>Group Tution</dd>
+									<dt>Hours Remaimning</dt>
+									<dd>12Hrs</dd>
+								</dl>
+
+								<dl class="col-sm-6 dashboard-list">
+									<dt>Student(s) Enrolled</dt>
+									<dd><input type="hidden"  class="rating" data-filled="fa fa-user" data-empty="fa fa-user text-muted" data-stop="10" value="2" data-readonly/></dd>
+									<dt>Next Session</dt>
+									<dd>10/04/2016 18:30</dd>
+								</dl>
+							</article>
+							
+							<article class="col-sm-12 enrolled-course">
+								<h4><a href="#" class="text-info text-capitalize">Sequence and series</a> 
+								<label class="mb0">(Math)</label>
+								<span class="pull-right rate">4.6 <i class="fa fa-star"></i></span>
+								</h4>
+							
+								<dl class="col-sm-6 dashboard-list">
+									<dt>Class Type</dt>
+									<dd>One to One </dd>
+									<dt>Hours Remaimning</dt>
+									<dd>12Hrs</dd>
+								</dl>
+
+								<dl class="col-sm-6 dashboard-list">
+									<dt>Student(s) Enrolled</dt>
+									<dd><a href="">Shantanu metha</a></dd>
+									<dt>Next Session</dt>
+									<dd>10/04/2016 18:30</dd>
+								</dl>
+							</article>					
+
+							<article class="col-sm-12 enrolled-course">
+								<h4><a href="#" class="text-info text-capitalize">Sequence and series</a> 
+								<label class="mb0">(Math)</label>
+								<span class="pull-right rate">4.6 <i class="fa fa-star"></i> </span>
+								</h4>
+							
+								<dl class="col-sm-6 dashboard-list">
+									<dt>Class Type</dt>
+									<dd>Group Tution</dd>
+									<dt>Hours Remaimning</dt>
+									<dd>12Hrs</dd>
+								</dl>
+
+								<dl class="col-sm-6 dashboard-list">
+									<dt>Student(s) Enrolled</dt>
+									<dd><input type="hidden"  class="rating" data-filled="fa fa-user" data-empty="fa fa-user text-muted" data-stop="10" value="2" data-readonly/></dd>
+									<dt>Next Session</dt>
+									<dd>10/04/2016 18:30</dd>
+								</dl>
+							</article>
+							
+							<article class="col-sm-12 enrolled-course">
+								<h4><a href="#" class="text-info text-capitalize">Sequence and series</a> 
+								<label class="mb0">(Math)</label>
+								<span class="pull-right rate">4.6 <i class="fa fa-star"></i></span>
+								</h4>
+							
+								<dl class="col-sm-6 dashboard-list">
+									<dt>Class Type</dt>
+									<dd>One to One </dd>
+									<dt>Hours Remaimning</dt>
+									<dd>12Hrs</dd>
+								</dl>
+
+								<dl class="col-sm-6 dashboard-list">
+									<dt>Student(s) Enrolled</dt>
+									<dd><a href="">Shantanu metha</a></dd>
+									<dt>Next Session</dt>
+									<dd>10/04/2016 18:30</dd>
+								</dl>
+							</article>					
+
+							<article class="col-sm-12 enrolled-course">
+								<h4><a href="#" class="text-info text-capitalize">Sequence and series</a> 
+								<label class="mb0">(Math)</label>
+								<span class="pull-right rate">4.6 <i class="fa fa-star"></i> </span>
+								</h4>
+							
+								<dl class="col-sm-6 dashboard-list">
+									<dt>Class Type</dt>
+									<dd>Group Tution</dd>
+									<dt>Hours Remaimning</dt>
+									<dd>12Hrs</dd>
+								</dl>
+
+								<dl class="col-sm-6 dashboard-list">
+									<dt>Student(s) Enrolled</dt>
+									<dd><input type="hidden"  class="rating" data-filled="fa fa-user" data-empty="fa fa-user text-muted" data-stop="10" value="2" data-readonly/></dd>
+									<dt>Next Session</dt>
+									<dd>10/04/2016 18:30</dd>
+								</dl>
+							</article>
+							<div class="text-center">
+								<ul class="pagination pagination-sm">
+									<li class="disabled"><a href="javascript:void(0)">«</a></li>
+									<li class="active"><a href="javascript:void(0)">1</a></li>
+									<li><a href="javascript:void(0)">2</a></li>
+									<li><a href="javascript:void(0)">3</a></li>
+									<li><a href="javascript:void(0)">»</a></li>
+								</ul>
+							</div>
+							</div>
+							<!-- End of card -->
+						</div>
+						<!-- Col9 -->
+
+
+
+					</section>
+				</div>
+			</div>
+
+
+						<!-- Contacts Footer -->
+						<footer class="contacts_wrap bg_tint_dark contacts_style_dark">
+
+				<div class="container">
+					<div class="sc_socials sc_socials_size_big pull-right">
+						<div class="sc_socials_item">
+							<a href="#" target="_blank" class="social_icons social_facebook">
+								<span class="sc_socials_hover social_facebook"></span>
+							</a>
+						</div>
+						<div class="sc_socials_item">
+							<a href="#" target="_blank" class="social_icons social_twitter">
+								<span class="sc_socials_hover social_twitter"></span>
+							</a>
+						</div>
+						<div class="sc_socials_item">
+							<a href="#" target="_blank" class="social_icons social_gplus">
+								<span class="sc_socials_hover social_gplus"></span>
+							</a>
+						</div>
+					</div>
+					<div class="logo">
+						<a href="index.html">
+							<img src="images/logo.png" alt="Erudo" class="img-responsive center-block">
+						</a>
+					</div>
+
+
+					<div class="contacts_address">
+						<address class="address_right">
+							Phone: +91 9746594857<br>
+							Office: +91 7561090677<br/>
+						</address>
+						<address class="address_left">
+							Erudo<br>   
+							Kannur Technolodge<br/>
+							Thavakkara<br/>
+						</address>
+					</div>
+
+				</div>                      
+			</footer>
+						<!-- /Contacts Footer  -->
+						<!-- Copyright -->
+						<div class="copyright_wrap">
+							<div class="content_wrap">
+								<p>© 2015 All Rights Reserved. <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></p>
+							</div>
+						</div>
+						<!-- /Copyright -->
+					</div>
+				</div>
+				<!-- /Body -->
+
+	
+
+				<script src="js/material/jquery-1.11.3.min.js"></script>
+				<script src="js/material/ripples.min.js"></script>
+				<script src="js/material/material.min.js"></script>
+				<script src="js/material/snackbar.min.js"></script>
+				<script src="js/material/bootstrap-tagsinput.js"></script>
+				<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+				<!-- Datetimepicker -->
+				<script type="text/javascript" src="js/material/moment.js"></script>
+				<script type="text/javascript" src="js/material/bootstrap-datetimepicker.min.js"></script>
+				<!-- Rating -->
+				<script src="js/material/bootstrap-rating.min.js"></script>
+				<script src="js/material/script.js"></script>
+
+			</body>
+
+			</html>

@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+	<title>Dashboard | Erudo</title>
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link href="css/material/app.css" rel="stylesheet">	
+	<link href="css/material/fullcalendar.min.css" rel="stylesheet">	
+</head>
+
+<body class="page ">
+
+	<header>
+		<div id="menu">
+			<div class=" container top-nav">
+
+				<a href="index.html">
+					<img src="images/logo.png" alt="Erudo" class="img-responsive" width="60">
+				</a>
+				<div class="p-lg menu-icon"><a class="p-lg" href="#side-nav"><i class="material-icons">menu</i></a></div>
+				<div class="pull-right">
+
+
+					<div class="btn-group">
+						<a href="" data-target="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><i class="material-icons">person</i></a>
+						<ul class="dropdown-menu">
+							<li><a href="javascript:void(0)">Your Courses</a></li>
+							<li><a href="javascript:void(0)">Account</a></li>
+							<li><a href="javascript:void(0)">Profile</a></li>
+							<li><a href="javascript:void(0)">Logout</a></li>
+						</ul>
+					</div>
+
+				</div>
+
+			</div>
+			<div class="row well p0" id="side-nav">
+				<div class="text-right p-lg">
+					<a class="btn-link close-nav" href="#">
+						<i class="material-icons">clear</i>
+					</a>
+				</div>
+				<ul class="list-group menu-list" >
+					<li class="user-block">
+						<a href="" ><img class="img-fluid center-block img-circle" src="http://lorempixel.com/64/64/people/1" alt="Erudo User"/></a>
+						<h4 class="text-center">User</h4>
+					</li>
+					<a href="mycourses.html" class="list-group-item withripple btn-block active">My Courses</a>
+					<a href="profile.html" class="list-group-item withripple btn-block">Profile</a>
+					<a href="accounts.html" class="list-group-item withripple btn-block">Accounts</a>
+					<a href="index.html" class="list-group-item withripple btn-block">Logout</a>
+				</ul>       
+			</div>
+		</div>
+	</header>
+
+	<!-- Body -->
+
+
+
+	<div class="well">
+		<div class="container">
+			<div class="col-sm-6 col-xs-8 pl0">
+				<h2>Dashboard</h2> 
+				<small>View active classes</small>
+			</div>
+			<div class="col-sm-6 col-xs-4 pr0">
+				<div class="pull-right mt">
+					<input class="form-control open" type="text" list="subjects" placeholder="Sort by subject">
+					<datalist id="subjects">
+						<option>English</option>
+						<option>Chemistry</option>
+						<option>Math</option>
+					</datalist>
+				</div>
+			</div>							
+		</div>
+	</div>
+
+	<div class="container page-contents">
+		<!-- Main Section -->
+		<section class="row mb-lg">
+
+			<div class="col-sm-3 p0">
+				<div class="panel text-center ph0 pv">
+					<img src="http://lorempixel.com/64/64/people" class="img-fluid img-circle center-block" alt="profile_pic">
+					<h4 class="text-capitalize text-center">john doe</h4>
+					<small>Lecturer, UC Berkley</small>
+					<div><input type="hidden"  class="rating" data-filled="fa fa-star rated" data-empty="fa fa-star" value="2" data-readonly/></div>
+					<ul class="list-inline course-wiggets">
+						<li class="c-widget">
+							<b class="course-count">8</b>
+							<span class="course-text">Personal</span>
+						</li>
+						<li class="c-widget">
+							<b class="course-count">10</b>
+							<span class="course-text">Active</span>
+						</li>
+						<li class="c-widget">
+							<b class="course-count">10</b>
+							<span class="course-text">Completed</span>
+						</li>									
+					</ul>
+
+					<dl class="pv mb0">	
+						<dt>Subjects Taught</dt>
+						<dd>Maths,English</dd>
+					</dl>
+				</div>
+
+				<div class="panel mt">
+					<div class="panel-heading">
+						<h4>Upcoming Sessions</h4>
+					</div>
+					<div class="panel-body p0">
+						<div class="list-group upcoming-list">
+
+							<a class="list-group-item">
+								<div class="session-date">
+									<h1 class="text-danger m0">3</h1>
+									Mar
+								</div>
+								<div class="session-name">
+									<h4 class="text-primary">Vector </h4>
+									<small>Arabind Shetty</small>
+								</div> 
+							</a>
+
+							<a class="list-group-item">
+								<div class="session-date">
+									<h1 class="text-danger m0">3</h1>
+									Mar
+								</div>
+								<div class="session-name">
+									<h4 class="text-primary">Vector Calculus</h4>
+									<small>Arabind Shetty</small>
+								</div> 
+							</a>
+
+							<a class="list-group-item">
+								<div class="session-date">
+									<h1 class="text-danger m0">3</h1>
+									Mar
+								</div>
+								<div class="session-name">
+									<h4 class="text-primary">Vector Calculus</h4>
+									<small>Arabind Shetty</small>
+								</div> 
+							</a>
+
+							<a class="list-group-item">
+								<div class="session-date">
+									<h1 class="text-danger m0">3</h1>
+									Mar
+								</div>
+								<div class="session-name">
+									<h4 class="text-primary">Vector Calculus</h4>
+									<small>Arabind Shetty</small>
+								</div> 
+							</a>																	
+
+						</div>
+					</div>
+				</div>
+
+<div id="calendar"></div>
+
+			</div>
+
+			<div class="col-sm-9">
+				<div class="panel">
+					<div class="panel-body">	
+
+						<article class="col-sm-12 enrolled-course">
+							<h4><a href="#" class="text-info text-capitalize">Sequence and series</a> 
+								<label class="mb0">(Math)</label>
+								<span class="pull-right rate">4.6 <i class="fa fa-star"></i> </span>
+							</h4>
+							
+							<dl class="col-sm-6 dashboard-list">
+								<dt>Class Type</dt>
+								<dd>Group Tution</dd>
+								<dt>Hours Remaimning</dt>
+								<dd>12Hrs</dd>
+							</dl>
+
+							<dl class="col-sm-6 dashboard-list">
+								<dt>Student(s) Enrolled</dt>
+								<dd><input type="hidden"  class="rating" data-filled="fa fa-user" data-empty="fa fa-user text-muted" data-stop="10" value="2" data-readonly/></dd>
+								<dt>Next Session</dt>
+								<dd>10/04/2016 18:30</dd>
+							</dl>
+						</article>
+
+						<article class="col-sm-12 enrolled-course">
+							<h4><a href="#" class="text-info text-capitalize">Sequence and series</a> 
+								<label class="mb0">(Math)</label>
+								<span class="pull-right rate">4.6 <i class="fa fa-star"></i> </span>
+							</h4>
+							
+							<dl class="col-sm-6 dashboard-list">
+								<dt>Class Type</dt>
+								<dd>Group Tution</dd>
+								<dt>Hours Remaimning</dt>
+								<dd>12Hrs</dd>
+							</dl>
+
+							<dl class="col-sm-6 dashboard-list">
+								<dt>Student(s) Enrolled</dt>
+								<dd><input type="hidden"  class="rating" data-filled="fa fa-user" data-empty="fa fa-user text-muted" data-stop="10" value="2" data-readonly/></dd>
+								<dt>Next Session</dt>
+								<dd>10/04/2016 18:30</dd>
+							</dl>
+						</article>
+
+						<article class="col-sm-12 enrolled-course">
+							<h4><a href="#" class="text-info text-capitalize">Sequence and series</a> 
+								<label class="mb0">(Math)</label>
+								<span class="pull-right rate">4.6 <i class="fa fa-star"></i> </span>
+							</h4>
+							
+							<dl class="col-sm-6 dashboard-list">
+								<dt>Class Type</dt>
+								<dd>Group Tution</dd>
+								<dt>Hours Remaimning</dt>
+								<dd>12Hrs</dd>
+							</dl>
+
+							<dl class="col-sm-6 dashboard-list">
+								<dt>Student(s) Enrolled</dt>
+								<dd><input type="hidden"  class="rating" data-filled="fa fa-user" data-empty="fa fa-user text-muted" data-stop="10" value="2" data-readonly/></dd>
+								<dt>Next Session</dt>
+								<dd>10/04/2016 18:30</dd>
+							</dl>
+						</article>
+
+						<article class="col-sm-12 enrolled-course">
+							<h4><a href="#" class="text-info text-capitalize">Sequence and series</a> 
+								<label class="mb0">(Math)</label>
+								<span class="pull-right rate">4.6 <i class="fa fa-star"></i> </span>
+							</h4>
+							
+							<dl class="col-sm-6 dashboard-list">
+								<dt>Class Type</dt>
+								<dd>Group Tution</dd>
+								<dt>Hours Remaimning</dt>
+								<dd>12Hrs</dd>
+							</dl>
+
+							<dl class="col-sm-6 dashboard-list">
+								<dt>Student(s) Enrolled</dt>
+								<dd><input type="hidden"  class="rating" data-filled="fa fa-user" data-empty="fa fa-user text-muted" data-stop="10" value="2" data-readonly/></dd>
+								<dt>Next Session</dt>
+								<dd>10/04/2016 18:30</dd>
+							</dl>
+						</article>
+
+
+						<article class="col-sm-12 enrolled-course">
+							<h4><a href="#" class="text-info text-capitalize">Sequence and series</a> 
+								<label class="mb0">(Math)</label>
+								<span class="pull-right rate">4.6 <i class="fa fa-star"></i> </span>
+							</h4>
+							
+							<dl class="col-sm-6 dashboard-list">
+								<dt>Class Type</dt>
+								<dd>Group Tution</dd>
+								<dt>Hours Remaimning</dt>
+								<dd>12Hrs</dd>
+							</dl>
+
+							<dl class="col-sm-6 dashboard-list">
+								<dt>Student(s) Enrolled</dt>
+								<dd><input type="hidden"  class="rating" data-filled="fa fa-user" data-empty="fa fa-user text-muted" data-stop="10" value="2" data-readonly/></dd>
+								<dt>Next Session</dt>
+								<dd>10/04/2016 18:30</dd>
+							</dl>
+						</article>
+
+
+						<article class="col-sm-12 enrolled-course">
+							<h4><a href="#" class="text-info text-capitalize">Sequence and series</a> 
+								<label class="mb0">(Math)</label>
+								<span class="pull-right rate">4.6 <i class="fa fa-star"></i> </span>
+							</h4>
+							
+							<dl class="col-sm-6 dashboard-list">
+								<dt>Class Type</dt>
+								<dd>Group Tution</dd>
+								<dt>Hours Remaimning</dt>
+								<dd>12Hrs</dd>
+							</dl>
+
+							<dl class="col-sm-6 dashboard-list">
+								<dt>Student(s) Enrolled</dt>
+								<dd><input type="hidden"  class="rating" data-filled="fa fa-user" data-empty="fa fa-user text-muted" data-stop="10" value="2" data-readonly/></dd>
+								<dt>Next Session</dt>
+								<dd>10/04/2016 18:30</dd>
+							</dl>
+						</article>
+
+
+						<article class="col-sm-12 enrolled-course">
+							<h4><a href="#" class="text-info text-capitalize">Sequence and series</a> 
+								<label class="mb0">(Math)</label>
+								<span class="pull-right rate">4.6 <i class="fa fa-star"></i> </span>
+							</h4>
+							
+							<dl class="col-sm-6 dashboard-list">
+								<dt>Class Type</dt>
+								<dd>Group Tution</dd>
+								<dt>Hours Remaimning</dt>
+								<dd>12Hrs</dd>
+							</dl>
+
+							<dl class="col-sm-6 dashboard-list">
+								<dt>Student(s) Enrolled</dt>
+								<dd><input type="hidden"  class="rating" data-filled="fa fa-user" data-empty="fa fa-user text-muted" data-stop="10" value="2" data-readonly/></dd>
+								<dt>Next Session</dt>
+								<dd>10/04/2016 18:30</dd>
+							</dl>
+						</article>
+
+
+						<article class="col-sm-12 enrolled-course">
+							<h4><a href="#" class="text-info text-capitalize">Sequence and series</a> 
+								<label class="mb0">(Math)</label>
+								<span class="pull-right rate">4.6 <i class="fa fa-star"></i> </span>
+							</h4>
+							
+							<dl class="col-sm-6 dashboard-list">
+								<dt>Class Type</dt>
+								<dd>Group Tution</dd>
+								<dt>Hours Remaimning</dt>
+								<dd>12Hrs</dd>
+							</dl>
+
+							<dl class="col-sm-6 dashboard-list">
+								<dt>Student(s) Enrolled</dt>
+								<dd><input type="hidden"  class="rating" data-filled="fa fa-user" data-empty="fa fa-user text-muted" data-stop="10" value="2" data-readonly/></dd>
+								<dt>Next Session</dt>
+								<dd>10/04/2016 18:30</dd>
+							</dl>
+						</article>
+
+						<div class="text-center">
+							<ul class="pagination pagination-sm">
+								<li class="disabled"><a href="javascript:void(0)">«</a></li>
+								<li class="active"><a href="javascript:void(0)">1</a></li>
+								<li><a href="javascript:void(0)">2</a></li>
+								<li><a href="javascript:void(0)">3</a></li>
+								<li><a href="javascript:void(0)">»</a></li>
+							</ul>
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!-- Col9 -->
+
+
+
+		</section>
+	</div>
+	
+
+
+	<!-- Contacts Footer -->
+	<footer class="contacts_wrap bg_tint_dark contacts_style_dark">
+
+		<div class="container">
+
+			<div class="logo form-group">
+				<a href="index.html">
+					<img src="images/logo.png" alt="Erudo" class="img-responsive center-block">
+				</a>
+			</div>
+
+
+			<div class="row">
+				<address class="col-xs-6 text-right">
+					Phone: +91 9746594857<br>
+					Office: +91 7561090677<br/>
+				</address>
+				<address class="col-xs-6 text-left">
+					Erudo<br>   
+					Kannur Technolodge<br/>
+					Thavakkara<br/>
+				</address>
+			</div>
+
+		</div>                      
+	</footer>
+	<!-- /Contacts Footer  -->
+	<!-- Copyright -->
+	<div class="well mb0 text-center">
+		<div class="content_wrap">
+			<p>© 2015 All Rights Reserved. <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></p>
+		</div>
+	</div>
+	<!-- /Copyright -->
+
+
+	
+
+	<script src="js/material/jquery-1.11.3.min.js"></script>
+	<script src="js/material/ripples.min.js"></script>
+	<script src="js/material/material.min.js"></script>
+	<script src="js/material/snackbar.min.js"></script>
+	<script src="js/material/bootstrap-tagsinput.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<!-- Datetimepicker -->
+	<script type="text/javascript" src="js/material/moment.js"></script>
+	<script type="text/javascript" src="js/material/bootstrap-datetimepicker.min.js"></script>
+	<!-- Rating -->
+	<script src="js/material/bootstrap-rating.min.js"></script>
+
+	<script type="text/javascript" src="js/material/moment.min.js"></script>
+	<script src="js/material/fullcalendar.min.js"></script>
+	<script src="js/material/script.js"></script>
+
+</body>
+
+</html>
